@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2019_06_13_234541) do
     t.boolean "visible"
     t.datetime "published_at"
     t.string "observations"
-    t.integer "summary"
+    t.text "summary"
     t.bigint "author_id", null: false
     t.string "itemable_type"
     t.bigint "itemable_id"

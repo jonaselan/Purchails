@@ -1,3 +1,3 @@
 class Book < ApplicationRecord
-  has_many :items, :as => :itemable
+  has_one :item, :as => :itemable
 end

@@ -6,7 +6,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.boolean :visible
       t.datetime :published_at
       t.string :observations
-      t.integer :summary
+      t.text :summary
       t.references :author, null: false, foreign_key: true
       t.references :itemable, polymorphic: true, index: true
 
